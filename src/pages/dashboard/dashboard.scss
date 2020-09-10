@@ -1,0 +1,31 @@
+@import "../../abstracts/variables.scss";
+
+.header-section{
+    max-width: $grid-width; 
+    margin: 0 auto;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+
+    &:not(:last-child){        
+        margin-bottom: $gutter-vertical;
+
+        // @include respond (tab-port) {
+        //     margin-bottom: $gutter-vertical-small;
+        // }
+    }
+
+    /*
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+    */
+    
+}
+
+.footer-logo{
+    text-align: center;
+    
+    .logo{
+        height: 6rem;
+    }
+}

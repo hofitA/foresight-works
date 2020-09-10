@@ -1,0 +1,39 @@
+@import './abstracts/variables.scss';
+@import './abstracts/mixin.scss';
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  
+    
+    @include respond (small){
+        font-size: 56%;
+    }
+    @include respond (medium){
+        font-size: 68%;
+    }
+    @include respond (big){
+        font-size: 75%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box; /* padding and border are calculated already */
+    padding: 0 3rem;
+}
+
+

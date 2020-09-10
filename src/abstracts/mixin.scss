@@ -1,0 +1,16 @@
+@mixin respond ($brakepoint) {
+    
+    @if $brakepoint == small {
+        @media (max-width: 80em) { @content }; /* 1280px */
+    }
+    @if $brakepoint == medium {
+        @media (max-width: 96em) { @content }; /* 1536px */
+    }
+    @if $brakepoint == big {
+        @media (min-width: 120em) { @content }; /* 1920px */
+    }
+
+}
+
+
+

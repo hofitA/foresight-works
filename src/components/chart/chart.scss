@@ -1,0 +1,7 @@
+@import "~react-vis/dist/style";
+@import "../../abstracts/variables.scss";
+
+.char-section{
+    text-align: center;
+    background-image: linear-gradient(to right bottom, $color-grey-light-1, $color-grey-light-2);
+}

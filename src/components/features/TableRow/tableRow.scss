@@ -1,0 +1,17 @@
+@import '../../../abstracts/variables.scss';
+
+.grid-row{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-top: 1px solid $color-black;
+    border-right: 1px solid $color-black;  
+    text-decoration: none;
+    
+    span.table-data{
+        padding: .8rem .4rem;
+        border-left: 1px solid $color-black;
+        border-bottom: 1px solid $color-black;  
+        text-decoration: none;
+        color: $color-black;
+    }
+}

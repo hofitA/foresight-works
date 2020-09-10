@@ -1,0 +1,37 @@
+@import "../../../abstracts/variables.scss";
+@import "../../../abstracts/mixin.scss";
+
+.header-section-features{ 
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: white;
+    z-index: 3;
+    height: 10rem;
+    /*
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+    */
+
+    .logo-box{      
+        margin-right: $gutter-vertical-small;
+        .logo{
+            height: 6rem;
+        }
+    }
+
+    span {
+        border: 1px solid $color-black;
+        height: 5rem;
+        background-image: linear-gradient(to right bottom, $color-grey-light-1, $color-grey-light-2);
+        display: inline-block;
+        width: calc((50% - 1 * #{$gutter-horizontal}) / 2); 
+        text-align:center;
+        margin-right: $gutter-vertical-small;
+    }
+    
+}
